@@ -1,0 +1,8 @@
+❌ Run failed completely: TypeError: next is not a function
+    at model.<anonymous> (C:\Users\ghosm\OneDrive\Desktop\Gifting Bliss\server\models\Collection.js:26:3)
+    at Kareem.execPre (C:\Users\ghosm\OneDrive\Desktop\Gifting Bliss\server\node_modules\kareem\index.js:68:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+TypeError: next is not a function
+    at model.<anonymous> (C:\Users\ghosm\OneDrive\Desktop\Gifting Bliss\server\models\Collection.js:26:3)
+    at Kareem.execPre (C:\Users\ghosm\OneDrive\Desktop\Gifting Bliss\server\node_modules\kareem\index.js:68:39)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

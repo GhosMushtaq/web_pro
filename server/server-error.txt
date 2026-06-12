@@ -1,0 +1,50 @@
+﻿[dotenv@17.3.1] injecting env (16) from .env -- tip: ΓÜÖ∩╕Å  override existing env vars with { override: true }
+node : (node:17028) [MONGOOSE] 
+Warning: `collection` is a 
+reserved schema pathname and 
+may break some functionality. 
+You are allowed to use it, but 
+use at your own risk. To 
+disable this warning pass 
+`suppressReservedKeysWarning` 
+as a schema option.
+At line:1 char:1
++ node server.js 2>&1 | 
+Out-File -FilePath 
+"server-error.txt" -Encoding 
+...
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          :  
+   NotSpecified: ((node:17028  
+  ) [M... schema option.:Str   
+ ing) [], RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 
+(Use `node --trace-warnings 
+...` to show where the warning 
+was created)
+(node:17028) [MONGOOSE] 
+Warning: `isNew` is a reserved 
+schema pathname and may break 
+some functionality. You are 
+allowed to use it, but use at 
+your own risk. To disable this 
+warning pass 
+`suppressReservedKeysWarning` 
+as a schema option.
+Γ£à MongoDB Atlas Connected
+≡ƒÜÇ Server running on port 5000
+≡ƒîÉ Client URL: http://localhost:5173
+[GET] /api/health ΓåÆ 500: 
+Cannot set property query of 
+#<IncomingMessage> which has 
+only a getter
+[GET] /api/health ΓåÆ 500: 
+Cannot set property query of 
+#<IncomingMessage> which has 
+only a getter
+[GET] /api/health ΓåÆ 500: 
+Cannot set property query of 
+#<IncomingMessage> which has 
+only a getter

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF2D7A"/>
+      <stop offset="100%" style="stop-color:#FF85B3"/>
+    </linearGradient>
+  </defs>
+  <!-- Gift Box Body -->
+  <rect x="15" y="45" width="70" height="45" rx="6" fill="url(#grad)"/>
+  <!-- Gift Box Lid -->
+  <rect x="10" y="35" width="80" height="18" rx="5" fill="#E0006A"/>
+  <!-- Ribbon Vertical -->
+  <rect x="44" y="35" width="12" height="55" rx="3" fill="#F4C542"/>
+  <!-- Ribbon Horizontal -->
+  <rect x="10" y="44" width="80" height="12" rx="3" fill="#F4C542"/>
+  <!-- Bow Left -->
+  <ellipse cx="35" cy="33" rx="16" ry="9" fill="#FFB4C8" transform="rotate(-30 35 33)"/>
+  <!-- Bow Right -->
+  <ellipse cx="65" cy="33" rx="16" ry="9" fill="#FFB4C8" transform="rotate(30 65 33)"/>
+  <!-- Bow Center -->
+  <circle cx="50" cy="35" r="7" fill="#FF2D7A"/>
+</svg>

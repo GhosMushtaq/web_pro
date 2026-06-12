@@ -1,0 +1,55 @@
+[dotenv@17.3.1] injecting env (16) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+✅ MongoDB Atlas Connected
+🚀 Server running on port 5000
+🌐 Client URL: http://localhost:5173
+[0mGET /api/health [32m200[0m 9.039 ms - 54[0m
+[0mGET /api/collections?active=true&featured=true [32m200[0m 220.741 ms - 33[0m
+[0mGET /api/products/featured [32m200[0m 244.163 ms - 64[0m
+[0mGET /api/collections?active=true&featured=true [36m304[0m 145.691 ms - -[0m
+[0mGET /api/products/featured [36m304[0m 155.753 ms - -[0m
+[0mGET /api/collections/for-her [33m404[0m 131.150 ms - 34[0m
+[0mGET /api/collections/for-her [33m404[0m 147.571 ms - 34[0m
+[0mGET /api/collections/valentines-day [33m404[0m 125.009 ms - 34[0m
+[0mGET /api/collections/eid-mubarak [33m404[0m 123.475 ms - 34[0m
+[0mGET /api/collections/personalized-gifts [33m404[0m 497.541 ms - 34[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=newest&rating=&page=1 [32m200[0m 145.622 ms - 59[0m
+[0mGET /api/collections?active=true [32m200[0m 152.679 ms - 33[0m
+[0mGET /api/collections?active=true [36m304[0m 124.197 ms - -[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=newest&rating=&page=1 [36m304[0m 126.287 ms - -[0m
+[0mPOST /api/auth/login [33m401[0m 170.293 ms - 39[0m
+[0mPOST /api/auth/login [33m401[0m 125.296 ms - 39[0m
+[0mGET /api/collections?active=true&featured=true [32m200[0m 118.887 ms - 33[0m
+[0mGET /api/collections?active=true&featured=true [36m304[0m 120.046 ms - -[0m
+[0mGET /api/products/featured [32m200[0m 490.485 ms - 64[0m
+[0mGET /api/products/featured [36m304[0m 200.074 ms - -[0m
+[0mGET /api/collections?active=true [32m200[0m 129.796 ms - 33[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=newest&rating=&page=1 [32m200[0m 129.257 ms - 59[0m
+[0mGET /api/collections?active=true [36m304[0m 503.510 ms - -[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=newest&rating=&page=1 [36m304[0m 513.064 ms - -[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=price-low&rating=&page=1 [32m200[0m 119.304 ms - 59[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=rating&rating=&page=1 [32m200[0m 124.411 ms - 59[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=newest&rating=&page=1 [36m304[0m 123.725 ms - -[0m
+[0mPOST /api/auth/login [33m401[0m 128.827 ms - 39[0m
+[0mPOST /api/auth/login [33m401[0m 127.028 ms - 39[0m
+[0mPOST /api/auth/login [33m401[0m 126.337 ms - 39[0m
+[0mPOST /api/auth/login [33m401[0m 133.486 ms - 39[0m
+[0mPOST /api/auth/login [33m401[0m 133.994 ms - 39[0m
+[0mPOST /api/auth/login [31m500[0m 1150.529 ms - 36[0m
+[0mGET /api/products/featured [36m304[0m 147.214 ms - -[0m
+[0mGET /api/collections?active=true&featured=true [32m200[0m 145.398 ms - -[0m
+[0mGET /api/products/featured [36m304[0m 521.516 ms - -[0m
+[0mGET /api/collections?active=true&featured=true [36m304[0m 742.587 ms - -[0m
+[0mGET /api/products/featured [36m304[0m 130.172 ms - -[0m
+[0mGET /api/collections?active=true&featured=true [36m304[0m 142.208 ms - -[0m
+[0mGET /api/products/featured [36m304[0m 139.841 ms - -[0m
+[0mGET /api/collections?active=true&featured=true [36m304[0m 138.952 ms - -[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=newest&rating=&page=1 [36m304[0m 137.329 ms - -[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=newest&rating=&page=1 [36m304[0m 127.968 ms - -[0m
+[0mGET /api/collections?active=true [32m200[0m 1378.854 ms - -[0m
+[0mGET /api/collections?active=true [36m304[0m 277.963 ms - -[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=price-high&rating=&page=1 [32m200[0m 142.949 ms - 59[0m
+[0mGET /api/products?collection=&minPrice=&maxPrice=&search=&sort=rating&rating=&page=1 [36m304[0m 139.815 ms - -[0m
+[0mPOST /api/auth/login [31m500[0m 1013.367 ms - 36[0m
+[0mPOST /api/auth/login [31m500[0m 1047.678 ms - 36[0m
+[0mPOST /api/auth/login [31m500[0m 471.989 ms - 36[0m
+[0mPOST /api/auth/login [31m500[0m 1837.975 ms - 36[0m

@@ -1,0 +1,21 @@
+﻿PASS Admin Login
+PASS Finance Login
+PASS Staff Login
+PASS Support Login
+PASS Customer Login
+PASS Auth Me (admin)
+PASS Collections
+PASS Products
+PASS Orders (admin)
+PASS Orders (finance)
+PASS Orders (staff)
+PASS Orders (support)
+PASS Users (admin)
+PASS Payments/Pending
+PASS Inventory
+PASS Support Tickets
+PASS Stats Dashboard
+PASS [403] RBAC Block /orders - Role 'customer' is not authorized
+PASS [403] RBAC Block /users - Role 'customer' is not authorized
+PASS [403] RBAC Block /stats - Role 'customer' is not authorized
+

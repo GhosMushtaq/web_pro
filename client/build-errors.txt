@@ -1,0 +1,122 @@
+﻿[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+node.exe : node_modules/react-h
+elmet-async/lib/index.module.js
+ (1:7186): A comment
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:\User
+s\ghosm\AppData\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo          :  
+   NotSpecified: (node_module  
+  s/re...186): A comment:Str   
+ ing) [], RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 
+
+"/*#__PURE__*/"
+
+in "node_modules/react-helmet-a
+sync/lib/index.module.js" 
+contains an annotation that 
+Rollup cannot interpret due to 
+the position of the comment. 
+The comment will be removed to 
+avoid issues.
+node_modules/react-helmet-async
+/lib/index.module.js 
+(1:13561): A comment
+
+"/*#__PURE__*/"
+
+in "node_modules/react-helmet-a
+sync/lib/index.module.js" 
+contains an annotation that 
+Rollup cannot interpret due to 
+the position of the comment. 
+The comment will be removed to 
+avoid issues.
+[32mΓ£ô[39m 31 modules transformed.
+[31mx[39m Build failed in 
+524ms
+[31merror during build:
+[31m[vite:esbuild] Transform 
+failed with 1 error:
+C:/Users/ghosm/OneDrive/Desktop
+/Gifting Bliss/client/src/pages
+/finance/Payments.jsx:44:122: 
+ERROR: Unexpected "}"[31m
+file: [36mC:/Users/ghosm/OneDr
+ive/Desktop/Gifting Bliss/clien
+t/src/pages/finance/Payments.js
+x:44:122[31m
+[33m
+[33mUnexpected "}"[33m
+42 |                  
+{p.proof?.url&&<img 
+src={p.proof.url} alt='Payment 
+proof' style={{maxWidth:300,bor
+derRadius:8,marginBottom:16,bor
+der:'1px solid #E5E7EB'}} />}
+43 |                  <div styl
+e={{display:'flex',gap:10}}>
+44 |                    
+<button className='btn 
+btn-primary btn-sm' onClick={()
+=>handleAction(p.order?._id,'ve
+rify')} id={erify-}>Γ£à 
+Verify Payment</button>
+   |                           
+                               
+                               
+                               
+    ^
+45 |                    
+<button className='btn btn-sm' 
+style={{background:'#FEE2E2',co
+lor:'#DC2626'}} 
+onClick={()=>{const 
+r=prompt('Rejection reason:');i
+f(r)handleAction(p.order?._id,'
+reject',r);}}>Γ¥î 
+Reject</button>
+46 |                  </div>
+[31m
+    at failureErrorWithLog (C:\
+Users\ghosm\OneDrive\Desktop\Gi
+fting Bliss\client\node_modules
+\esbuild\lib\main.js:1472:15)
+    at C:\Users\ghosm\OneDrive\
+Desktop\Gifting Bliss\client\no
+de_modules\esbuild\lib\main.js:
+755:50
+    at 
+responseCallbacks.<computed> (C
+:\Users\ghosm\OneDrive\Desktop\
+Gifting Bliss\client\node_modul
+es\esbuild\lib\main.js:622:9)
+    at handleIncomingPacket (C:
+\Users\ghosm\OneDrive\Desktop\G
+ifting Bliss\client\node_module
+s\esbuild\lib\main.js:677:12)
+    at Socket.readFromStdout (C
+:\Users\ghosm\OneDrive\Desktop\
+Gifting Bliss\client\node_modul
+es\esbuild\lib\main.js:600:7)
+    at Socket.emit 
+(node:events:518:28)
+    at addChunk (node:internal/
+streams/readable:561:12)
+    at 
+readableAddChunkPushByteMode (n
+ode:internal/streams/readable:5
+12:3)
+    at Readable.push (node:inte
+rnal/streams/readable:392:5)
+    at Pipe.onStreamRead (node:
+internal/stream_base_commons:18
+9:23)[39m
