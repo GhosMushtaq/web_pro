@@ -19,8 +19,16 @@
       "destination": "/server/server.js"
     },
     {
+      "source": "/assets/(.*)",
+      "destination": "/client/assets/$1"
+    },
+    {
+      "source": "/favicon.svg",
+      "destination": "/client/favicon.svg"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/client/$1"
+      "destination": "/client/index.html"
     }
   ]
 }
