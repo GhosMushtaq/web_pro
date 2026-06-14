@@ -12,12 +12,15 @@ require('dotenv').config();
 
 const app    = express();
 const server = http.createServer(app);
-const io     = new Server(server, {
-  cors: { origin: process.env.CLIENT_URL, credentials: true }
-});
 
-// Attach io to app for use in controllers
-app.set('io', io);
+// Mock Socket.io for Vercel Serverless environment
+const mockIo = {
+  emit: () => {},
+  to: () => ({ emit: () => {} })
+};
+
+// Attach mock io to app for use in controllers
+app.set('io', mockIo);
 
 // Manual CORS (Express 5 compatible)
 app.use((req, res, next) => {
@@ -71,19 +74,24 @@ app.use('/{*path}', (req, res) => {
 // Error Handler
 app.use(require('./middleware/errorHandler'));
 
-// Socket Handler
-require('./socket/socketHandler')(io);
+// Socket Handler (Disabled for Vercel Serverless)
+// require('./socket/socketHandler')(io);
 
 // Database Connection + Start Server
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     console.log('✅ MongoDB Atlas Connected');
-    server.listen(process.env.PORT || 5000, () => {
-      console.log(`🚀 Server running on port ${process.env.PORT || 5000}`);
-      console.log(`🌐 Client URL: ${process.env.CLIENT_URL}`);
-    });
+    // Only start server listening if not running on Vercel
+    if (!process.env.VERCEL) {
+      server.listen(process.env.PORT || 5000, () => {
+        console.log(`🚀 Server running on port ${process.env.PORT || 5000}`);
+        console.log(`🌐 Client URL: ${process.env.CLIENT_URL}`);
+      });
+    }
   })
   .catch(err => {
     console.error('❌ MongoDB connection failed:', err);
-    process.exit(1);
   });
+
+// Export app for Vercel Serverless Functions
+module.exports = app;
