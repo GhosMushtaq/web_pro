@@ -13,6 +13,9 @@ require('dotenv').config();
 const app    = express();
 const server = http.createServer(app);
 
+// Trust proxy (required for Vercel / CDN proxies when using express-rate-limit)
+app.set('trust proxy', 1);
+
 // Mock Socket.io for Vercel Serverless environment
 const mockIo = {
   emit: () => {},
