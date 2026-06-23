@@ -19,11 +19,10 @@ const collectionSchema = new mongoose.Schema({
   productCount: { type: Number, default: 0 },
 }, { timestamps: true });
 
-collectionSchema.pre('save', function(next) {
+collectionSchema.pre('save', function() {
   if (!this.slug) {
     this.slug = this.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
   }
-  next();
 });
 
 module.exports = mongoose.model('Collection', collectionSchema);

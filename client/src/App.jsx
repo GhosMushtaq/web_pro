@@ -100,7 +100,7 @@ function AppContent() {
   }, []);
 
   return (
-    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <BrowserRouter>
       <ScrollToTop />
       <AnimatePresence mode="wait">
         <Suspense fallback={<PageLoader />}>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FiHeart, FiShoppingBag, FiStar, FiEye } from 'react-icons/fi';
 import { useDispatch, useSelector } from 'react-redux';
@@ -15,9 +15,8 @@ const cardVariants = {
 
 export default function ProductCard({ product }) {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
   const { isAuthenticated } = useSelector(s => s.auth);
-  const wishlist = useSelector(s => s.auth.user?.wishlist);
+  const { wishlist } = useSelector(s => s.auth.user || {});
   const [inWishlist, setInWishlist] = useState(wishlist?.includes(product._id));
   const [loading, setLoading] = useState(false);
 
@@ -85,13 +84,9 @@ export default function ProductCard({ product }) {
             >
               <FiHeart />
             </button>
-            <button
-              className="quick-view-btn"
-              title="Quick view"
-              onClick={(e) => { e.preventDefault(); e.stopPropagation(); navigate(`/product/${product.slug}`); }}
-            >
+            <Link to={`/product/${product.slug}`} className="quick-view-btn" title="Quick view">
               <FiEye />
-            </button>
+            </Link>
           </div>
 
           {/* Add to Cart overlay */}
