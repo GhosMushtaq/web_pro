@@ -51,11 +51,12 @@ const orderSchema = new mongoose.Schema({
   cancelReason: String,
 }, { timestamps: true });
 
-orderSchema.pre('save', async function() {
+orderSchema.pre('save', async function(next) {
   if (!this.orderNumber) {
     const count = await mongoose.model('Order').countDocuments();
     this.orderNumber = `GB-${String(count + 1).padStart(6, '0')}`;
   }
+  next();
 });
 
 module.exports = mongoose.model('Order', orderSchema);

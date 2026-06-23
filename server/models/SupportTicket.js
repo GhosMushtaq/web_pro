@@ -20,11 +20,12 @@ const ticketSchema = new mongoose.Schema({
   rating:       { type: Number, min: 1, max: 5 },
 }, { timestamps: true });
 
-ticketSchema.pre('save', async function() {
+ticketSchema.pre('save', async function(next) {
   if (!this.ticketNumber) {
     const count = await mongoose.model('SupportTicket').countDocuments();
     this.ticketNumber = `TKT-${String(count + 1).padStart(5, '0')}`;
   }
+  next();
 });
 
 module.exports = mongoose.model('SupportTicket', ticketSchema);
