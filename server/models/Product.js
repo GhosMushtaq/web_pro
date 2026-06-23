@@ -35,10 +35,11 @@ const productSchema = new mongoose.Schema({
   metaDesc:      String,
 }, { timestamps: true });
 
-productSchema.pre('save', function() {
+productSchema.pre('save', function(next) {
   if (!this.slug) {
     this.slug = this.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
   }
+  next();
 });
 
 module.exports = mongoose.model('Product', productSchema);
