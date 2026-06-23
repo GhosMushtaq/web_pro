@@ -84,9 +84,9 @@ export default function ProductCard({ product }) {
             >
               <FiHeart />
             </button>
-            <Link to={`/product/${product.slug}`} className="quick-view-btn" title="Quick view">
+            <div className="quick-view-btn" title="Quick view">
               <FiEye />
-            </Link>
+            </div>
           </div>
 
           {/* Add to Cart overlay */}
